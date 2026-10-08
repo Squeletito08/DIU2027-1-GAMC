@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos Perdidos</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="#">
+            <h1> Perdidos en un espacio liminal</h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#carrusel">Buscar
+                        Objetos</a></li>
+                <li><a href="#reportar">Reportar
+                        Objeto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <h2>OBJETOS PERDIDOS</h2>
+                <p> ¿Has visto estos objectos en tus sueños?</p>
+            </div>
+
+            <div>
+                Aquí va el Carrusel de imagenes :b
+            </div>
+
+            <div>
+                <button>◄</button>
+                <button>►</button>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2>REPORTAR UN OBJETO</h2>
+            </div>
+
+            <form>
+                <div>
+                    <label for="nombreObjeto">Nombre del Objeto:</label>
+                    <input type="text" id="nombreObjeto" name="nombreObjeto" placeholder="Reloj" required>
+                </div>
+
+                <div>
+                    <label for="lugarVisto">Último Lugar Visto:</label>
+                    <input type="text" id="lugarVisto" name="lugarVisto" placeholder="Fac de ciencias" required>
+                </div>
+
+                <div>
+                    <label for="fechaPerdida">Fecha en la que se Perdió:</label>
+                    <input type="date" id="fechaPerdida" name="fechaPerdida" required>
+                </div>
+
+                <div>
+                    <label for="descripcionObjeto">Descripción Detallada:</label>
+                    <textarea id="descripcionObjeto" name="descripcionObjeto"
+                        placeholder="Describe textura, color, etc." required></textarea>
+                </div>
+
+                <div>
+                    <label for="imagenObjeto">Imagen del Objeto:</label>
+                    <input type="file" id="imagenObjeto" name="imagenObjeto" accept="image/*" required>
+                </div>
+
+                <button type="submit">REGISTRAR</button>
+            </form>
+        </section>
+
+    </main>
+
+    <div id="notificacion" role="status"></div>
+
+</body>
+
+</html>
