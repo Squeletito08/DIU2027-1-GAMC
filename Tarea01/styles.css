@@ -1,0 +1,31 @@
+:root {
+	--color-verde: #81b13f;
+	--color-blanco: #f5f2f9;
+	--color-azul: #57d0fd;
+	--color-rosa: #ff9ebb;
+	--color-purpura: #c39bd3;
+	--color-texto: #1a1a24;
+	--color-tarjeta: #ffffff;
+	--color-perdido: #ff3366;
+	--color-encontrado: #00b894;
+	--fuente-principal: "Trebuchet MS", "Lucida Sans Unicode", Tahoma, sans-serif;
+	--fuente-titulos: "Comic Sans MS", "Courier New", cursive, sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: linear-gradient(180deg, var(--color-azul) 0%, var(--color-blanco) 20%, var(--color-blanco) 75%, var(--color-verde) 100%);
+	background-attachment: fixed;
+	color: var(--color-texto);
+	font-family: var(--fuente-principal);
+	line-height: 1.6;
+}
