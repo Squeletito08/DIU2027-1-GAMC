@@ -29,3 +29,68 @@ body {
 	font-family: var(--fuente-principal);
 	line-height: 1.6;
 }
+
+.encabezado {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	background-color: var(--color-azul);
+	border-bottom: 3px ridge #ffffff;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.navegacion {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 12px 20px;
+}
+
+.logotipo {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-family: var(--fuente-titulos);
+	font-size: 1.25rem;
+	color: #ffffff;
+	text-shadow: 1px 1px 2px #000000;
+}
+
+.menu-navegacion {
+	display: flex;
+	gap: 12px;
+}
+
+.boton-navegacion {
+	text-decoration: none;
+	background-color: var(--color-blanco);
+	color: var(--color-texto);
+	padding: 8px 16px;
+	border-radius: 20px;
+	border: 2px solid var(--color-verde);
+	font-weight: bold;
+	font-size: 0.9rem;
+	transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.boton-navegacion:hover {
+	background-color: var(--color-verde);
+	color: #ffffff;
+	transform: translateY(-2px);
+}
+
+.boton-navegacion:focus {
+	outline: 3px solid var(--color-rosa);
+}
+
+.boton-destacado {
+	background-color: var(--color-rosa);
+	border-color: #ffffff;
+	color: #ffffff;
+}
+
+.boton-destacado:hover {
+	background-color: #ff6b8b;
+}
