@@ -94,3 +94,52 @@ body {
 .boton-destacado:hover {
 	background-color: #ff6b8b;
 }
+
+.seccion-hero {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 20px;
+	background: linear-gradient(180deg, var(--color-azul) 0%, rgba(245, 242, 249, 0) 100%);
+	text-align: center;
+	overflow: hidden;
+}
+
+.contenido-hero {
+	z-index: 2;
+}
+
+.titulo-principal {
+	font-family: var(--fuente-titulos);
+	font-size: 3.5rem;
+	color: var(--color-verde);
+	text-shadow: 3px 3px 0px #ffffff, 5px 5px 0px var(--color-rosa);
+	margin-bottom: 10px;
+}
+
+.subtitulo-principal {
+	font-size: 1.05rem;
+	color: #4a4a5a;
+	background: rgba(255, 255, 255, 0.85);
+	padding: 6px 18px;
+	border-radius: 12px;
+	display: inline-block;
+	border: 1px dashed var(--color-purpura);
+}
+
+.decoracion-nube {
+	position: absolute;
+	font-size: 4rem;
+	opacity: 0.85;
+}
+
+.nube-izquierda {
+	left: 8%;
+	top: 15%;
+}
+
+.nube-derecha {
+	right: 8%;
+	bottom: 15%;
+}
