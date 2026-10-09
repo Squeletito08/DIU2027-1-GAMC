@@ -143,3 +143,26 @@ body {
 	right: 8%;
 	bottom: 15%;
 }
+
+.decoracion-nube {
+	position: absolute;
+	font-size: 4rem;
+	opacity: 0.85;
+	animation: flotarNube 3.5s ease-in-out infinite alternate;
+}
+
+.nube-derecha {
+	right: 8%;
+	bottom: 15%;
+	animation-delay: 1.7s;
+}
+
+@keyframes flotarNube {
+	0% {
+		transform: translateY(0px) scale(1);
+	}
+
+	100% {
+		transform: translateY(-15px) scale(1.05);
+	}
+}
