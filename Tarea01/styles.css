@@ -190,3 +190,80 @@ body {
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	gap: 25px;
 }
+
+.tarjeta-objeto {
+	background-color: var(--color-tarjeta);
+	border: 3px ridge var(--color-azul);
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.08);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-objeto:hover {
+	transform: translateY(-6px);
+	box-shadow: 6px 8px 18px rgba(87, 208, 253, 0.35);
+}
+
+.contenedor-imagen {
+	position: relative;
+	width: 100%;
+	height: 220px;
+}
+
+.imagen-objeto {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-bottom: 2px solid var(--color-azul);
+}
+
+.etiqueta-estado {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	padding: 4px 12px;
+	font-weight: bold;
+	font-size: 0.8rem;
+	border-radius: 20px;
+	color: #ffffff;
+	letter-spacing: 1px;
+	border: 1px solid #ffffff;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.estado-perdido {
+	background-color: var(--color-perdido);
+}
+
+.estado-encontrado {
+	background-color: var(--color-encontrado);
+}
+
+.contenido-tarjeta {
+	padding: 16px;
+}
+
+.nombre-objeto {
+	font-size: 1.1rem;
+	color: var(--color-texto);
+	margin-bottom: 10px;
+	border-bottom: 2px dotted var(--color-purpura);
+	padding-bottom: 6px;
+}
+
+.dato-objeto {
+	font-size: 0.88rem;
+	color: #555565;
+	margin-bottom: 4px;
+}
+
+.descripcion-objeto {
+	font-size: 0.9rem;
+	color: #333340;
+	margin-top: 10px;
+	background-color: var(--color-blanco);
+	padding: 8px;
+	border-radius: 6px;
+	border-left: 3px solid var(--color-verde);
+}
