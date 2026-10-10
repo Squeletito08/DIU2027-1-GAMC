@@ -166,3 +166,27 @@ body {
 		transform: translateY(-15px) scale(1.05);
 	}
 }
+
+.contenedor-principal {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 30px 20px 40px 20px;
+}
+
+.seccion-objetos {
+	margin-bottom: 60px;
+}
+
+.titulo-seccion {
+	font-family: var(--fuente-titulos);
+	text-align: center;
+	font-size: 2rem;
+	color: var(--color-verde);
+	margin-bottom: 30px;
+}
+
+.grilla-objetos {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 25px;
+}
