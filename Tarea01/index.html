@@ -93,8 +93,60 @@
             <div class="grilla-objetos">
             </div>
         </section>
+        <section id="reportar" class="seccion-formulario">
+            <div class="contenedor-formulario">
+                <h2 class="titulo-formulario">Reporta tu objeto perdido</h2>
+                <p class="subtitulo-formulario">Completa la información requerida para agregar la publicación al
+                    registro.</p>
 
+                <form class="formulario-objeto">
+
+                    <div class="campo-formulario">
+                        <label for="nombre-objeto" class="etiqueta-campo">Nombre del Objeto:</label>
+                        <input type="text" id="nombre-objeto" name="nombre" class="entrada-campo"
+                            placeholder="Ej. Álbum Imaginal Disk, llaves, cartera..." required>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="estado-objeto" class="etiqueta-campo">Estado:</label>
+                        <select id="estado-objeto" name="estado" class="seleccion-campo" required>
+                            <option value="PERDIDO">PERDIDO</option>
+                            <option value="ENCONTRADO">ENCONTRADO</option>
+                        </select>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="fecha-objeto" class="etiqueta-campo">Fecha:</label>
+                        <input type="date" id="fecha-objeto" name="fecha" class="entrada-campo" required>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="lugar-objeto" class="etiqueta-campo">Último Lugar Visto:</label>
+                        <input type="text" id="lugar-objeto" name="lugar" class="entrada-campo"
+                            placeholder="Ej. Entrada principal, pasillo norte..." required>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="descripcion-objeto" class="etiqueta-campo">Descripción:</label>
+                        <textarea id="descripcion-objeto" name="descripcion" class="area-campo" rows="4"
+                            placeholder="Describe detalles físicos, características o distintivos del objeto..."
+                            required></textarea>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="imagen-objeto" class="etiqueta-campo">URL de la Imagen:</label>
+                        <input type="url" id="imagen-objeto" name="imagen" class="entrada-campo"
+                            placeholder="https://ejemplo.com/imagen.jpg">
+                    </div>
+
+                    <button type="submit" class="boton-enviar">Registrar Objeto ✦</button>
+
+                </form>
+            </div>
+        </section>
     </main>
+
+
 </body>
 
 </html>
